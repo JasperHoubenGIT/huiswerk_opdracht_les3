@@ -1,0 +1,23 @@
+import java.util.HashMap;
+
+public class Translator{
+    HashMap<Integer, String> numericAlpha = new HashMap<>();
+    private String alphabetic;
+    private int numeric;
+
+    public Translator(String[] alphabetic, int[] numeric){
+
+        for (int i = 0; i < alphabetic.length; i++){
+            numericAlpha.put(numeric[i],alphabetic[i]);
+            }
+    }
+    public String translate (int number){
+        return numericAlpha.get(number);
+    }
+
+
+
+}
+
+
+
